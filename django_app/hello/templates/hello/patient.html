@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'hello/css/style.css' %}" /> 
+</head>
+
+<body>
+
+  <div>
+    <a href="{% url 'index' %}">index</a>
+    <a href="{% url 'friend' %}">friend</a>
+    <a href="{% url 'createfriend' %}">createfriend</a>
+    <a href="{% url 'putfriend' %}">putfriend</a>
+    <a href="{% url 'contact' %}">contact</a>
+    <a href="{% url 'createstatus' %}">createstatus</a>
+    <a href="{% url 'status' %}">status</a>
+    <a href="{% url 'service' %}">service</a>
+  </div>
+
+  <p>__new_str__でクエリセットを表示</p>
+  <table>{{data|safe}}</table>
+
+  <p>ループで表示</p>
+   {% for item in data %}
+  <td>{{item}}</td>
+  {% endfor %}
+
+  <br>
+
+  <section>
+    <div id="root"></div>
+  </section>
+
+</body>
+
+<br>
+<script src="{% static "hello/main.js" %}"></script>
+
+</html>

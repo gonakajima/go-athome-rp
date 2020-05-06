@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<div>{% load static %}</div>
+<link rel="stylesheet" type="text/css" href="{% static 'src/css/style.css' %}" />
+
+<title>{{title}}</title>
+
+<body>
+  <header class="ly_header">
+    <div class="ly_header_inner hp_bgcBlue">
+      <div class="bl_header">
+        <h1>往診の依頼はこちらです。</h1>     
+      <!--
+        <a href="{% url 'contact' %}">　往診の依頼はこちら　</a>
+        <a href="{% url 'createfriend' %}">ご自身の登録はこちら　</a>
+        <a href="{% url 'createservice' %}">事業所登録はこちら　</a>
+      -->
+      </div>
+      <!-- /.bl_header -->
+    </div>
+    <!-- /.ly_header_inner -->
+  </header>
+  <div class="ly_cont">
+    <section>
+      <h1></h1>
+      <h2 class="el_lv2Heading">
+      　　<div>令和2年の冬以後、往診依頼が増え入退院調整事情に大きな変化が生じております。</div>
+      　　<div>取り急ぎこちらのウェブアプリケーションでも臨時のご依頼を承ることができるように致しました。</div>
+      　　<div>順次改築を行って参ります。よろしくお願い申し上げます。</div>
+      　　<div>令和２年５月１０日中嶋豪<div>
+      </h2>
+    </section>
+    <article class="ly_lineup">
+        <div class="bl_contact">
+          <a class="el_btn hp_centered" href="contact">往診を申し込む</a>
+        <div>
+        <!-- ./bl_contact>
+    </article>
+    <div class="ly_cont_col">
+      <main class="ly_cont_main">
+      </main>
+      <aside class="ly_cont_side">
+        <section class="hp_bgcGreen">
+          <h3>{{side_txt}}</h3>
+          <h4 class="el_lv4Heading">サイドの文章</h4>
+        </section>
+      </aside>
+    </div>
+    <!-- /.ly_cont__col -->
+    
+    <!--
+　   <table class="hp_centered">
+      <tr>
+        <th>{{data}}</th>
+      </tr>
+      {% for item in data %}
+      <tr>
+        <td>{{item}}</td>
+      </tr>
+      {% endfor %}    
+    </table>
+    -->
+
+  </div>
+  <!-- /.ly_cont -->
+  <footer>
+    <div class="ly_footer hp_bgcCherry">
+      <div class="ly_footer_inner hp_bgcBlue">
+        <small class="bl_footerCopyright">@2020 Go AtHome Clinic.</small>
+      </div>
+      <!-- .ly_footer_inner -->
+    </div>
+    <!-- .ly_footer -->
+  </footer>
+</body>
+
+<div class="ly_react">
+  <section>
+    <div id="app"></div>
+  </section>
+</div>
+<!-- .ly_react -->
+<script src="{% static 'src/bundle.js' %}"></script>
+
+</html>

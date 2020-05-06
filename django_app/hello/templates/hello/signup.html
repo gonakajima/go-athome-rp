@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+{% load static %}
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'src/css/style.css' %}" /> 
+  </head>
+
+  <body>
+  {% extends 'signup.html' %}
+  {% block content %}
+    <h1>Sign Up</h1>
+  {% endblock %}
+  </body>
+
+</html>
