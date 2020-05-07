@@ -1,5 +1,5 @@
 #!/bin/bash
 isExistApp='pgrep nginx' #nginxパターンに合致したプロセスIDの一覧を表示
-if [ -n $isExistApp ]; then
+if [[ -n \$isExistApp ]]; then
     systemctl stop nginx
 fi
