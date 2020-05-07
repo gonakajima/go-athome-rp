@@ -1,2 +1,2 @@
 #!/bin/bash
-yum install -y nginx
+amazon-linux-extras install nginx
