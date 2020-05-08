@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-    - source: /django_app/hello/templates/hello/index.html
-      destination: /var/www/html/
+    - source: django_app
+      destination: /var/www/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
