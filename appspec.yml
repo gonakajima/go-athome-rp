@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-    - source: go-athome/django_app/hello/templates/hello/index.html
+    - source: /django_app/hello/templates/hello/index.html
       destination: /var/www/html/
 hooks:
   BeforeInstall:
